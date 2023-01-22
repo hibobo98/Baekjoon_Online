@@ -1,6 +1,9 @@
-N = int(input())
-tot = map(int, input().split())
-v = int(input())
+import sys
+
+N = sys.stdin.readline().rstrip()
+tot = sys.stdin.readline().rstrip().split()
+v = sys.stdin.readline().rstrip()
+
 l = []
 
 for i in tot:
