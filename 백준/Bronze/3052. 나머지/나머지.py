@@ -1,8 +1,6 @@
-l = []
-for _ in range(10):
-    N = int(input())
-    last = N % 42
-    l.append(last)
+a = {}
 
-l = set(l)
-print(len(l))
+for i in range(10):
+    b = int(input())
+    a[b%42] = i
+print(len(a))
