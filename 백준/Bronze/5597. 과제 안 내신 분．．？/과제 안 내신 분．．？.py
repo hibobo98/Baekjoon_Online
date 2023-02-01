@@ -1,12 +1,8 @@
-l = []
-for i in range(28):
-    N = int(input())
-    l.append(N)
+students = [i for i in range(1,31)]
 
-check  =[]
-for i in range(1,31):
-    if i not in l:
-        check.append(i)
+for _ in range(28):
+    applied = int(input())
+    students.remove(applied) #소거
 
-print(min(check))
-print(max(check))
+print(min(students))
+print(max(students))
