@@ -1,7 +1,7 @@
-def Factorial(Num):
-    if Num < 2:
+def sol(n):
+    if n < 2:
         return 1
     else:
-        return Num * Factorial(Num-1)
+        return n*sol(n-1)
 
-print(Factorial(int(input())))
+print(sol(int(input())))
